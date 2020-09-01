@@ -1,0 +1,212 @@
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        list-style: none;
+        text-decoration: none;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    
+    p {
+        margin-bottom: 15px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #4b4a4a;
+    }
+    
+    h1.title {
+        margin-bottom: 20px;
+        color: #444444;
+        font-family: 'Allura', cursive;
+        text-transform: uppercase;
+        font-size: 38px;
+        word-spacing: 25px;
+        letter-spacing: 5px;
+    }
+    
+    .btn a {
+        display: block;
+        width: 180px;
+        height: 35px;
+        border: 2px solid #0b044e;
+        line-height: 35px;
+        margin: 25px auto 0;
+        color: #0b044e;
+        text-align: center;
+    }
+    
+    .main_container {
+        position: relative;
+    }
+    /* Navigation bar */
+    
+    .navbar {
+        width: 100%;
+        height: 65px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+    }
+    
+    .logo a {
+        font-family: 'Allura', cursive;
+        font-size: 32px;
+        color: #0b044e;
+    }
+    
+    .navbar .navbar_items ul {
+        display: flex;
+    }
+    
+    .navbar .navbar_items ul li {
+        text-transform: uppercase;
+        margin: 0 10px;
+    }
+    
+    .navbar .navbar_items ul li a {
+        color: rgb(7, 1, 59);
+    }
+    /* Banner Image */
+    
+    .banner_image {
+        background: url("https://imgur.com/TjWkIcz.jpg") no-repeat top center;
+        background-size: cover;
+        width: 100%;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .banner_content {
+        text-align: center;
+        color: rgb(1, 14, 87);
+    }
+    
+    .banner_content h1 {
+        text-transform: uppercase;
+        line-height: 38px;
+        margin-bottom: 15px;
+    }
+    
+    .banner_content h1 span {
+        color: #0b044e;
+    }
+    /* About us */
+    
+    .about,
+    .services,
+    .contactus,
+    .ourteam {
+        padding: 5% 10%;
+        text-align: center;
+    }
+    /* Contact */
+    
+    .form_input {
+        margin-bottom: 15px;
+    }
+    
+    .form_input input[type="text"] {
+        width: 250px;
+        padding: 12px 20px;
+        border: 1px solid #ccc;
+    }
+    
+    .form_input textarea {
+        width: 250px;
+        padding: 12px 20px;
+        height: 80px;
+        resize: none;
+        border: 1px solid #ccc;
+    }
+    /* footer */
+    
+    .footer {
+        width: 100%;
+        text-align: center;
+        background: #444444;
+        padding: 20px 0;
+    }
+    
+    .footer a {
+        color: #fff;
+    }
+    
+    @media (max-width: 720px) {
+        .navbar {
+            height: auto;
+            flex-direction: column;
+        }
+        .navbar ul {
+            flex-direction: column;
+            text-align: center;
+        }
+        .logo {
+            margin-bottom: 25px;
+        }
+        .navbar ul li {
+            margin-bottom: 5px;
+        }
+        .banner_content {
+            margin-top: 35px;
+        }
+    }
+</style>
+<div class="main_container" id="home">
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">Portfolio</a>
+        </div>
+        <div class="navbar_items">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="banner_image">
+        <div class="banner_content">
+            <h1>Tamim Rahat Mithun<br/>
+                <span>Portfolio of Tamim Rahat Mithun</span>
+            </h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                book.
+            </p>
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <h1 class="title">About</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem
+            Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem
+            Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <div class="btn"><a href="#">Learn More</a></div>
+    </div>
+    <div class="contactus" id="contact">
+        <h1 class="title">Contact</h1>
+        <div class="form_wrapper">
+            <div class="form_input">
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="form_input">
+                <input type="text" placeholder="Subject">
+            </div>
+            <div class="form_input">
+                <textarea placeholder="Message"></textarea>
+            </div>
+            <div class="btn">
+                <a href="#">Submit</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="#">@ 2020 Mithun</a>
+    </div>
+</div>
